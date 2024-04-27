@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <style>
+            body{
+                background-color: wheat;
+            }
+            table{
+                margin: auto;
+                background-color: white;
+                padding: 60px;
+                border-radius: 9px;
+            }
+            h1{
+                text-align: center;
+                color: blueviolet;
+            }
+            td{
+            padding: 9px;
+            font-size: large;
+            }
+            #b{
+                padding: 10px;
+                border-radius: 7px;
+                background-color: green;
+                width: 100px;
+                font-size: large;
+                color: white;
+            }
+            #b:hover{
+                background-color: blue;
+                color:white;
+            }
+            a{
+                padding: 10px;
+                border-radius: 7px;
+                background-color: green;
+                width: 100px;
+                font-size: large;
+                color: white;
+            }
+            a:hover{
+                background-color: blue;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student Login Form</h1>
+        <form action="./output" method="post">
+            <table>
+                <tr><td>Email</td><td><input type="email" name="t9" required></td></tr>
+
+                <tr><td>PassWord</td><td><input type="password" name="t10"required></td></tr>
+
+                <tr><td></td><td><input type="submit" value="Submit" id="b" required></td></tr>
+
+            </table>
+            <a href="./home">Back</a>
+        </form>
+    </body>
+</html>

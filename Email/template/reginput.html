@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+            body{
+                background-color: whitesmoke;
+            }
+            table{
+                margin: auto;
+                background-color: white;
+                padding: 60px;
+                border-radius: 9px;
+            }
+            h1{
+                text-align: center;
+                color: blueviolet;
+            }
+            td{
+            padding: 9px;
+            font-size: large;
+            }
+           
+            a{
+                padding: 10px;
+                border-radius: 7px;
+                background-color: green;
+                width: 100px;
+                font-size: large;
+                color: white;
+            }
+            a:hover{
+                background-color: blue;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student Register Form</h1>
+        <form action="./input" method="post">
+            <table>
+                <tr><td>First Name</td><td><input type="text" name="t1" required></td></tr>
+
+                <tr><td>Last Name</td><td><input type="text" name="t2" required></td></tr>
+
+                <tr><td>Gender</td><td><input type="radio" name="t3" value="Male" required>Male<input type="radio" name="t3" value="Female">Female</td></tr>
+
+                <tr><td>Date Of Birth</td><td><input type="date" name="t4" required></td></tr>
+
+                <tr><td>High Graduation</td><td><input list="hgra" name='t5' required>
+                    <datalist id="hgra">
+                    <option>Post Graduation
+                    <option>B.Tech
+                    <option>Graduation
+                    <option>Intermediate
+                    <option>SSC
+                    </datalist>
+                </td></tr>
+
+                <tr><td>Course Name</td><td><input type="text" name="t6" required></td></tr>
+
+                <tr><td>Year</td><td><input type="number" name="t7" required></td></tr>
+
+                <tr><td>Mobile Number</td><td><input type="number" name="t8" required></td></tr>
+
+                <tr><td>Email</td><td><input type="email" name="t9" required></td></tr>
+
+                <tr><td>PassWord</td><td><input type="password" name="t10"required></td></tr>
+
+                <tr><td>Conform PassWord</td><td><input type="password" name="t11" required></td></tr>
+
+                <tr><td></td><td><input type="submit" value="Submit" id="b" required></td></tr>
+
+            </table>
+            <a href="./home">Back</a>
+        </form>
+    </body>
+</html>
